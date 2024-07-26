@@ -1,53 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Box</title>
     <style>
-        .flex{
-            display:flex;
+        * {
+            scroll-behavior: smooth;
+        }
+
+        .bg-container {
+            position: relative;
+            top: 10px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+
+        }
+
+        .bg-container img {
+
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 10%;
+            right: 50%;
+            left: 8%;
+            color: rgb(62, 91, 91);
+            font-size: 100px;
+            text-align: left;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .text-overlay2 {
+            position: absolute;
+            top: 60%;
+            right: 80%;
+            left: 9%;
+            color: rgb(62, 91, 91);
+            font-size: 33px;
+            padding-left: 0px;
+            text-align: left;
+            font-weight: 500;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .flex {
+            display: flex;
             flex-direction: row;
-            background-color: black;
+            background-color: rgb(77, 73, 73);
             color: crimson;
-            justify-content: space-evenly;
-            padding:20px;
-            height:50px;
+            justify-content: space-around;
+            padding: 20px;
+            height: 50px;
+            width: 97.5%;
+            margin-top: 0%;
         }
-        .ul{
+
+        .ul {
             list-style-type: none;
-            display:flex;
+            display: flex;
         }
-        .li{
+
+        .li {
             padding-left: ;
         }
-        .li:hover{
-            background-color: ;
+
+        .li:hover {
+            background-color: rgb(203, 218, 223);
 
 
 
         }
-        a{
+
+        a {
             text-decoration: none;
-            color:;
+            color: darkgrey;
+            padding: 50px;
         }
     </style>
 </head>
+
 <body>
+
     <nav>
         <div class="flex">
             <ul class="ul">
-                <li class="li"><a href="">Home</a></li>
-                <li class="li"><a href="" >About</a></li>
-                <li class="li"><a href=" ">Skills</a></li>
-                <li class="li"></li>
-                <li class="li">Honors & Awards</li>
-                <li class="li">Contact</li>
-                
+                <li class="li"><a href="flex.html">Home</a></li>
+                <li class="li"><a href="about.html">About</a></li>
+                <li class="li"><a href="task1.html">Education</a></li>
+                <li class="li"><a href="display.html ">Skills</a></li>
+                <li class="li"><a href="#contact">Contact</a></li>
+
 
             </ul>
         </div>
     </nav>
-    
+    <div class="bg-container">
+        <img src="Rithu .jpg" alt="my profile">
+        <div class="text-overlay">Hi,RITHANYAA DS here!</div>
+        <div class="text-overlay2">
+            <p id="contact">CONTACT</p>
+            <p>9344975751</p>
+            <p>rithukarthee@gmail.com</p>
+        </div>
+
+
 </body>
+
 </html>

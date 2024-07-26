@@ -5,19 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day 4:Display</title>
     <style>
+        .flex{
+            display:flex;
+            flex-direction: row-reverse;
+            background-color: rgb(77, 73, 73);
+            color: crimson;
+            justify-content: space-evenly;
+            padding:20px;
+            height:50px;
+            width:97.7%;
+            margin-top:0.5%;
+            margin-left:2px;
+        }
+            .ul{
+            list-style-type: none;
+            display:flex;
+        }
+        .li{
+            padding-inline-start: 20px ;
+        }
+        .li:hover{
+            background-color:rgb(203, 218, 223) ;
+
+
+
+        }
+        a{
+            text-decoration: none;
+            color:darkgrey;
+            padding:50px;
+            text-align: center;
+        }
+        
+        
+            
+
+    
         *{
             margin:10px;
-            margin-top: 25px;
+            margin-top: 1px;
+            margin-left:6px;
             
         }
+
         .one{
             background-color: rgb(64, 202, 227) ;
             height: 100px;;
             width: auto;
             border: 8px ;
             border-color:coral;
-            border-style:ridge;
+            border-style:outset;
             align-content:center ;
+            margin:2px;
         }
         .two{
             background-color: rgb(234, 119, 119);
@@ -27,6 +66,8 @@
             border-color:coral;
             border-style:outset;
             align-content: center;
+            margin:2px;
+        
         }
         .three{
             background-color: rgb(174, 122, 223);
@@ -34,35 +75,54 @@
             width:auto;
             border: 8px;
             border-color: coral;
-            border-style: ridge;
+            border-style: outset;
             align-content: center;
+            margin:2px;
+        
         }
         .four{
-            background-color: rgb(218, 34, 132);
+            background-color: rgb(227, 105, 170);
             height:100px;
             width: auto;
             border: 8px;
             border-color: coral;
             border-style:outset;
             align-content:center;
+            margin:2px;
+        
         }
 
         h2{
             text-align:center;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family:'Times New Roman', Times, serif;
+            color:beige;
            }
     
     </style>
 </head>
 <body>
+    <nav>
+        <div class="flex">
+            <ul class="ul">
+                <li class="li"><a href="flex.html">Home</a></li>
+                <li class="li"><a href="about.html" >About</a></li>
+                <li class="li"><a href="task1.html">Education</a></li>
+                <li class="li"><a href="display.html ">Skills</a></li>
+            
+                <li class="li"><a href="">Contact</a></li>
+
+
+            </ul>
+        </div>
+    </nav>
     <div class="one">
-        <h2> Chennai</h2></div>
+        <h2>PROGRAMMING LANGUAGES:<br>Cpp,Java</h2></div>
     <br>
-    <div class="two"><h2>Coimbatore</h2></div>
+    <div class="two"><h2>DATABASE:<br>MySQL</h2></div>
     <br>
-    <div class="three"><h2>Madurai</h2></div>
+    <div class="three"><h2>TOOLS:<br> Code,GitHub,Multisim</h2></div>
     <br>
-    <div class="four"><h2>Karur</h2></div>
+    <div class="four"><h2>Web Technology:<br>HTML,CSS</h2></div>
     
 </body>
 </html>
